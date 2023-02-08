@@ -1,0 +1,7 @@
+作业内容：
+时间：2月8号 ~ 2月15号
+1. 注册一个github账号，fork https://github.com/assmdx/homework仓库。仿写baidu.com 手机网页，实现效果与截图 baidu.jpg相同即可，代码放在week1目录下。代码完成后，向 https://github.com/assmdx/homework发一个pull request
+2. 做2道题：
+	https://leetcode.cn/problems/two-sum/
+	https://leetcode.cn/problems/palindrome-number/
+	题目在网站提交通过后，把代码放在week1目录下，向 https://github.com/assmdx/homework发一个pull request
