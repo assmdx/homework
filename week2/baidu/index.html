@@ -1,0 +1,129 @@
+<!DOCTYPE <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Baidu</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<script src="https://unpkg.com/vue@next"></script>
+	<link rel="stylesheet" type="text/css" href="css/baidu.css"/>
+</head>
+<body>
+<nav id="Application">
+	<div class="da">
+		<div class="tou1">
+			<img src="img/4f64ec14a27dc6011cf7da53ff6fd06.jpg" alt="">
+		</div>
+		<div class="tou2">
+			<img src="img/6bd7c644f52544f7b0562a60b38545f.jpg" alt="">
+		</div>
+	</div>
+	<div class="bdt">
+		<img src="img/0e68b9bf8e9d66d5ea299d1ea8109fa.jpg" alt="">
+	</div>
+	<div class="ssk">
+		 <div class="top-search">
+		         <div class="search-box">
+		             <input type="text" name="search" class="search-left">
+		             <span class="iconfont icon-xiangji"></span>
+		             <input class="search-right" type="submit" name="btn" id="su" value='百度一下'>
+		         </div>
+		     </div>
+		
+	</div>
+	<div class="nr">
+		 <template v-for="toutiao in list">
+		<div class="n1" >
+			<div class="n11">
+				<a href="" class="">{{toutiao.name}}</a>
+			</div>
+			<div class="n12">
+				<a href="" class="n1h">{{toutiao.zd}}</a><a href="" class="f1">{{toutiao.wz}}</a> 
+			</div>
+		</div>
+		</template>
+		<template v-for="two in lis">
+		<div class="n2">
+			<div class="n21">
+				<a href="" class="">{{two.tt}}</a>
+			</div>
+			<div class="n22">
+				<a href="" class="f1">{{two.xw}}</a> 
+			</div>
+		</div>
+		</template>
+		<template v-for="item in imgz">
+			<div class="n5">
+				<div class="tu1">
+					<img src={{item.lj}} alt="">
+				</div>
+				<div class="d1">
+					<div class="n51">
+						<a href="" class="">{{item.bt}}</a>
+					</div>
+					<div class="n52">
+						<a href=""  class="f1">{{item.xw}}</a> 
+					</div>
+				</div>
+			</div>
+		</template>
+		
+	</div>
+</nav>
+	 <script>
+	        // 定义一个Vue, 名为App
+	        const App = {
+	            data() {
+	                return {
+	                    list:[
+	                        {
+	                            name: "习近平总书记深刻阐释中国式现代化",
+	                            zd: "置顶",
+								wz:"新华网"
+	                        },
+	                        {
+	                           name: "“正确理解和大力推进中国式现代化”",
+	                           zd: "置顶",
+	                           wz:"新华网"
+	                        }
+	                       
+	                    ], imgz:[
+	                        {
+	                           lj: "./img/15938e0099d4e22f76a83889ce0f098c.jpeg",
+	                            bt: "C罗是在刷数据吗？",
+								xw:"极目新闻"
+	                        },
+	                        {
+	                           lj: "./img/15938e0099d4e22f76a83889ce0f098c.jpeg",
+	                            bt: "“QQ崩了”竟是因为回忆杀，24年后第一批用户已60岁了”",
+	                        	xw:"极目新闻"
+	                        },
+	                       {
+	                          lj: './img/15938e0099d4e22f76a83889ce0f098c.jpeg',
+	                           bt: "AI技术要和人“抢饭碗”？！清华大学教授：知识型中低端脑力劳动岗位危险了",
+	                       	xw:"红星新闻"
+	                       }
+	                       
+	                    ],lis:[
+	                        {
+	                     
+	                            tt: "星火成炬|小生意看活力？",
+								xw:"央视网"
+	                        },
+	                        {
+	                           
+	                            tt: "挺能忽悠也会瞎编!ChatGPT一小时生成的研报刷屏，内容靠谱吗?有券商分…",
+	                        	xw:"证券时报"
+	                        }
+	                       
+	                    ]
+						
+						
+	                    
+	                }
+	            }
+	        }
+	        Vue.createApp(App).mount("#Application") 
+	    </script>
+	
+</body>
+</html>
